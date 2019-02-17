@@ -36,7 +36,7 @@ $port = 587
 $From = "login@yandex.ru"
 
 #Кому
-$To = "login@yandex.ru"
+$To = "somemail@yandex.ru"
 
 #Тема письма
 $subject = "Alert, smth is not working    " + $rptDate
@@ -66,5 +66,5 @@ $smtp.EnableSSL = $true
 $smtp.Credentials = New-Object System.Net.NetworkCredential($user, $pass);
 
 #Отправляем письмо
-$smtp.Send($mes) 
+$smtp.Send($mes)
 }
